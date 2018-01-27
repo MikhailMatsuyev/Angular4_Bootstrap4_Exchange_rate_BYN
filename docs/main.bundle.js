@@ -162,7 +162,7 @@ var HttpServiceService = (function () {
         this.http = http;
     }
     HttpServiceService.prototype.getFactorial = function () {
-        return this.http.get('http://www.nbrb.by/API/ExRates/Rates?Periodicity=0')
+        return this.http.get('https://www.nbrb.by/API/ExRates/Rates?Periodicity=0')
             .map(function (resp) { return resp; })
             .catch(function (error) { return __WEBPACK_IMPORTED_MODULE_2_rxjs_Observable__["Observable"].throw(error); });
     };
