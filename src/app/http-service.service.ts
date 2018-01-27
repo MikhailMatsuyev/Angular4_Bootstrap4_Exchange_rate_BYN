@@ -13,7 +13,7 @@ export class HttpServiceService {
 
   getFactorial( ) {
 
-    return this.http.get('http://www.nbrb.by/API/ExRates/Rates?Periodicity=0')
+    return this.http.get('https://www.nbrb.by/API/ExRates/Rates?Periodicity=0')
      .map( ( resp: Response ) => { return resp; } )
      .catch( (error: any) => { return Observable.throw(error); } );
      }
