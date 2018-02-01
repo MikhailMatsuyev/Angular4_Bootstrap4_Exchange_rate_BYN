@@ -14,7 +14,7 @@ export class AppComponent {
   constructor(private httpService: HttpServiceService) {}
 
   submit( ) {
-    this.httpService.getFactorial( )
+    this.httpService.getRatesFromAPI( )
       .subscribe((data) => {this.func(data); } );
   }
 
